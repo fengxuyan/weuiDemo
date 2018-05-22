@@ -1,0 +1,201 @@
+@charset "UTF-8";
+.show {
+  visibility: visible !important; }
+
+* {
+  font-family: '微软雅黑', 'Microsoft YaHei'; }
+
+ul, li {
+  list-style-type: none; }
+
+/*字体中等粗*/
+.txt-m-weight {
+  font-weight: 700; }
+
+.fa.fa-active {
+  color: #51AA38; }
+
+.index1 .weui-swiped-btn {
+  display: flex;
+  align-items: center; }
+
+.index1 .weui-cell {
+  padding: 0; }
+
+.index1 .weui-media-box {
+  padding: 5px 15px; }
+
+.index1 .weui-search-bar__box .weui-search-bar__input, .index2 .weui-search-bar__box .weui-search-bar__input, .weui-search-bar__label {
+  height: 1.3rem;
+  line-height: 1.5rem; }
+
+.index1 .weui-search-bar.weui-search-bar_focusing {
+  display: flex;
+  align-items: center; }
+
+.index1 .weui-search-bar__box .weui-icon-search {
+  line-height: 38px; }
+
+.index2 .weui-cells, .index3 .weui-cells, .index4 .weui-cells {
+  margin-top: 0; }
+
+.index2 .fa, .index3 .fa, .index4 .fa {
+  width: 1.5rem;
+  color: #EDA150; }
+
+.index2 {
+  margin-bottom: 53px;
+  background-color: #efeff4; }
+
+.weui-tabbar {
+  position: fixed; }
+
+.letter-lists {
+  position: absolute;
+  right: 1%;
+  top: 30%;
+  position: fixed;
+  /* list-style: none; */
+  list-style-type: none; }
+
+.index3, .index3 .weui-cells, .index4 .weui-cells, .index4 {
+  background-color: #efeff4; }
+
+.index3 .weui-cell, .index4 .weui-cell {
+  margin-bottom: .3rem;
+  background-color: #fff; }
+
+/*
+朋友圈页面样式
+ */
+.circle-container .g-cicle-top .g-img-box {
+  position: relative;
+  height: 10rem; }
+  .circle-container .g-cicle-top .g-img-box img {
+    width: 100%;
+    height: 100%; }
+  .circle-container .g-cicle-top .g-img-box .g-head-box {
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+    bottom: -.5rem;
+    width: 3rem;
+    height: 3rem; }
+    .circle-container .g-cicle-top .g-img-box .g-head-box img {
+      width: 100%;
+      height: 100%;
+      padding: 1px;
+      background: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 2px 2px 3px #00000078; }
+    .circle-container .g-cicle-top .g-img-box .g-head-box .g-txt-head {
+      display: inline-block;
+      position: absolute;
+      right: 3.5rem;
+      top: .5rem;
+      width: 2rem;
+      font-size: .8rem;
+      color: #fff;
+      font-style: normal; }
+.circle-container .g-m-content {
+  margin-top: 3rem; }
+  .circle-container .g-m-content .g-list-box {
+    margin-top: 1rem;
+    padding: 0 1rem .5rem;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden; }
+    .circle-container .g-m-content .g-list-box .g-l-head {
+      display: inline-block;
+      left: 2rem;
+      top: 2rem;
+      width: 2rem;
+      height: 2rem; }
+      .circle-container .g-m-content .g-list-box .g-l-head img {
+        width: 100%;
+        height: 100%; }
+    .circle-container .g-m-content .g-list-box .g-r-box {
+      display: inline-block;
+      float: right;
+      width: 85%; }
+      .circle-container .g-m-content .g-list-box .g-r-box .g-t-nickname {
+        color: #5B6A92;
+        font-weight: bold; }
+      .circle-container .g-m-content .g-list-box .g-r-box .g-b-time {
+        display: flex;
+        align-items: center;
+        position: relative;
+        font-size: .6rem;
+        color: #727272; }
+        .circle-container .g-m-content .g-list-box .g-r-box .g-b-time .icon-comment {
+          display: inline-block;
+          position: absolute;
+          right: 0;
+          width: 1.3rem;
+          height: 1.3rem;
+          background-image: url("../images/comments.svg");
+          background-size: 100% 100%;
+          background-repeat: no-repeat; }
+      .circle-container .g-m-content .g-list-box .g-r-box .u-mask {
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #4D5153;
+        color: #fff;
+        width: 50%;
+        position: absolute;
+        right: 1.3rem;
+        padding: .35rem;
+        border-radius: 5px; }
+        .circle-container .g-m-content .g-list-box .g-r-box .u-mask .s-separate {
+          font-style: normal;
+          color: #383D3F; }
+        .circle-container .g-m-content .g-list-box .g-r-box .u-mask span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 3rem; }
+        .circle-container .g-m-content .g-list-box .g-r-box .u-mask .icon-good {
+          width: 0.9rem;
+          height: 0.9rem;
+          display: inline-block;
+          background-image: url("../images/good.svg");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          padding-right: .4rem; }
+        .circle-container .g-m-content .g-list-box .g-r-box .u-mask .icon-comment2 {
+          width: 0.9rem;
+          height: 0.9rem;
+          display: inline-block;
+          background-image: url("../images/comment2.svg");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          padding-right: .4rem; }
+      .circle-container .g-m-content .g-list-box .g-r-box .goods-lists {
+        margin-top: .3rem;
+        overflow-x: hidden;
+        color: #5B6A92;
+        background-color: #F3F3F5; }
+        .circle-container .g-m-content .g-list-box .g-r-box .goods-lists span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          float: left;
+          padding: 0 .1rem 0 0; }
+        .circle-container .g-m-content .g-list-box .g-r-box .goods-lists .icon-good {
+          width: 0.9rem;
+          height: 0.9rem;
+          display: inline-block;
+          background-image: url("../images/good-01.svg");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          padding-right: .4rem; }
+      .circle-container .g-m-content .g-list-box .g-r-box .comments-lists {
+        padding-left: .2rem;
+        overflow-x: hidden;
+        color: #5B6A92;
+        background-color: #F3F3F5; }
+      .circle-container .g-m-content .g-list-box .g-r-box .g-m-paragraph {
+        border: 1px solid green; }
+
+/*# sourceMappingURL=style.css.map */

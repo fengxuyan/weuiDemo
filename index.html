@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WeChat</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+    <link rel="stylesheet" href="src/css/lib/weui.min.css">
+    <link rel="stylesheet" href="src/css/lib/jquery-weui.min.css">
+    <link rel="stylesheet" href="src/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/demos.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <style>
+        .tile {
+            width: 290px;
+            height: 290px;
+            float: left;
+            border: 1px solid #999;
+            margin: 4px;
+        }
+    </style>
+</head>
+
+<body ontouchstart>
+
+<div class="weui-tab">
+
+
+    <div class="weui-tab__bd" style="box-sizing: content-box;">
+        <div id="tab1" class="index1 weui-tab__bd-item weui-tab__bd-item--active">
+            <div class="page__pd">
+                <div class="weui-search-bar" id="searchBar">
+                    <form class="weui-search-bar__form" action="#">
+                        <div class="weui-search-bar__box">
+                            <i class="weui-icon-search"></i>
+                            <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索"
+                                   required="">
+                            <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+                        </div>
+                        <label class="weui-search-bar__label" id="searchText"
+                               style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+                            <i class="weui-icon-search"></i>
+                            <span>搜索</span>
+                        </label>
+                    </form>
+                    <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+                </div>
+
+
+                <div class="weui-panel weui-panel_access">
+                    <div class="weui-panel__bd">
+                        <div class="weui-cell weui-cell_swiped" id="">
+                            <div class="weui-cell__bd">
+                                <div class="weui-cell">
+                                    <div class="weui-cell__bd">
+                                        <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                                            <div class="weui-media-box__hd">
+                                                <img class="weui-media-box__thumb" src="src/images/avatar.jpg" alt="">
+                                                <span class="weui-badge"
+                                                      style="position: absolute;top: 0em;left: 5.5em;">8</span>
+                                            </div>
+                                            <div class="weui-media-box__bd">
+                                                <h4 class="weui-media-box__title">
+                                                    456
+                                                    <span class="weui-media-box__title-after">下午8:12</span>
+                                                </h4>
+                                                <p class="weui-media-box__desc">########</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <a class="weui-swiped-btn weui-swiped-btn_warn delete-swipeout"
+                                   href="javascript:">删除</a>
+                                <a class="weui-swiped-btn weui-swiped-btn_default close-swipeout"
+                                   href="javascript:">关闭</a>
+                            </div>
+                        </div>
+                        <div class="weui-cell weui-cell_swiped" id="">
+                            <div class="weui-cell__bd">
+                                <div class="weui-cell">
+                                    <div class="weui-cell__bd">
+                                        <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                                            <div class="weui-media-box__hd">
+                                                <img class="weui-media-box__thumb" src="src/images/avatar.jpg" alt="">
+                                            </div>
+                                            <div class="weui-media-box__bd">
+                                                <h4 class="weui-media-box__title">
+                                                    456
+                                                    <span class="weui-media-box__title-after">下午8:12</span>
+                                                </h4>
+                                                <p class="weui-media-box__desc">########</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <a class="weui-swiped-btn weui-swiped-btn_warn delete-swipeout"
+                                   href="javascript:">删除</a>
+                                <a class="weui-swiped-btn weui-swiped-btn_default close-swipeout"
+                                   href="javascript:">关闭</a>
+                            </div>
+                        </div>
+                        <div class="weui-cell weui-cell_swiped" id="">
+                            <div class="weui-cell__bd">
+                                <div class="weui-cell">
+                                    <div class="weui-cell__bd">
+                                        <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                                            <div class="weui-media-box__hd">
+                                                <img class="weui-media-box__thumb" src="src/images/avatar.jpg" alt="">
+                                            </div>
+                                            <div class="weui-media-box__bd">
+                                                <h4 class="weui-media-box__title">
+                                                    456
+                                                    <span class="weui-media-box__title-after">下午8:12</span>
+                                                </h4>
+                                                <p class="weui-media-box__desc">########</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <a class="weui-swiped-btn weui-swiped-btn_warn delete-swipeout"
+                                   href="javascript:">删除</a>
+                                <a class="weui-swiped-btn weui-swiped-btn_default close-swipeout"
+                                   href="javascript:">关闭</a>
+                            </div>
+                        </div>
+                        <div class="weui-cell weui-cell_swiped" id="">
+                            <div class="weui-cell__bd">
+                                <div class="weui-cell">
+                                    <div class="weui-cell__bd">
+                                        <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                                            <div class="weui-media-box__hd">
+                                                <img class="weui-media-box__thumb" src="src/images/avatar.jpg" alt="">
+                                            </div>
+                                            <div class="weui-media-box__bd">
+                                                <h4 class="weui-media-box__title">
+                                                    456
+                                                    <span class="weui-media-box__title-after">下午8:12</span>
+                                                </h4>
+                                                <p class="weui-media-box__desc">########</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <a class="weui-swiped-btn weui-swiped-btn_warn delete-swipeout"
+                                   href="javascript:">删除</a>
+                                <a class="weui-swiped-btn weui-swiped-btn_default close-swipeout"
+                                   href="javascript:">关闭</a>
+                            </div>
+                        </div>
+                        <div class="weui-cell weui-cell_swiped" id="">
+                            <div class="weui-cell__bd">
+                                <div class="weui-cell">
+                                    <div class="weui-cell__bd">
+                                        <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                                            <div class="weui-media-box__hd">
+                                                <img class="weui-media-box__thumb" src="src/images/avatar.jpg" alt="">
+                                            </div>
+                                            <div class="weui-media-box__bd">
+                                                <h4 class="weui-media-box__title">
+                                                    456
+                                                    <span class="weui-media-box__title-after">下午8:12</span>
+                                                </h4>
+                                                <p class="weui-media-box__desc">########</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <a class="weui-swiped-btn weui-swiped-btn_warn delete-swipeout"
+                                   href="javascript:">删除</a>
+                                <a class="weui-swiped-btn weui-swiped-btn_default close-swipeout"
+                                   href="javascript:">关闭</a>
+                            </div>
+                        </div>
+                        <div class="weui-cell weui-cell_swiped" id="">
+                            <div class="weui-cell__bd">
+                                <div class="weui-cell">
+                                    <div class="weui-cell__bd">
+                                        <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                                            <div class="weui-media-box__hd">
+                                                <img class="weui-media-box__thumb" src="src/images/avatar.jpg" alt="">
+                                            </div>
+                                            <div class="weui-media-box__bd">
+                                                <h4 class="weui-media-box__title">
+                                                    456
+                                                    <span class="weui-media-box__title-after">下午8:12</span>
+                                                </h4>
+                                                <p class="weui-media-box__desc">########</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <a class="weui-swiped-btn weui-swiped-btn_warn delete-swipeout"
+                                   href="javascript:">删除</a>
+                                <a class="weui-swiped-btn weui-swiped-btn_default close-swipeout"
+                                   href="javascript:">关闭</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tab2" class="index2 weui-tab__bd-item " style="height:auto;">
+            <div class="weui-search-bar" id="searchBar">
+                <form class="weui-search-bar__form" action="#">
+                    <div class="weui-search-bar__box">
+                        <i class="weui-icon-search"></i>
+                        <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索"
+                               required="">
+                        <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+                    </div>
+                    <label class="weui-search-bar__label" id="searchText"
+                           style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+                        <i class="weui-icon-search"></i>
+                        <span>搜索</span>
+                    </label>
+                </form>
+                <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+            </div>
+
+            <div class="weui-cells">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                    <div class="weui-cell__bd">
+                        <p>新的朋友</p>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                    <div class="weui-cell__bd">
+                        <p>群聊</p>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                    <div class="weui-cell__bd">
+                        <p>标签</p>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                    <div class="weui-cell__bd">
+                        <p>公众号</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-lists">
+                <div class="lists-item" id="A">
+                    <p>A</p>
+                    <div class="weui-cells">
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd">
+                                <i class="fa fa-user-plus" aria-hidden="true"></i>
+                            </div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="lists-item" id="B">
+                    <p>B</p>
+                    <div class="weui-cells">
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="lists-item" id="C">
+                    <p>C</p>
+                    <div class="weui-cells">
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="lists-item" id="D">
+                    <p>D</p>
+                    <div class="weui-cells">
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="lists-item" id="E">
+                    <p>E</p>
+                    <div class="weui-cells">
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd"><i class="fa fa-user-plus" aria-hidden="true"></i></div>
+                            <div class="weui-cell__bd">
+                                <p>新的朋友222</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="letter-lists">
+                <ul>
+                    <li class="A">A</li>
+                    <li class="B">B</li>
+                    <li class="C">C</li>
+                    <li class="D">D</li>
+                    <li class="E">E</li>
+                    <li class="F">F</li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+        <div id="tab3" class="index3 weui-tab__bd-item">
+            <div class="weui-cells">
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__hd">
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p class="friendsCircle">朋友圈</p>
+                    </div>
+                    <div class="weui-cell__ft">
+                    </div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__hd">
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>扫一扫</p>
+                    </div>
+                    <div class="weui-cell__ft">
+                    </div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__hd">
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>小程序</p>
+                    </div>
+                    <div class="weui-cell__ft">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="tab4" class="index4 weui-tab__bd-item">
+            <div class="weui-cells">
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__hd">
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p class="friendsCircle">朋友圈</p>
+                    </div>
+                    <div class="weui-cell__ft">
+                    </div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__hd">
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>扫一扫</p>
+                    </div>
+                    <div class="weui-cell__ft">
+                    </div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__hd">
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>小程序</p>
+                    </div>
+                    <div class="weui-cell__ft">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="weui-tabbar">
+        <a href="#tab1" class="weui-tabbar__item weui-bar__item--on">
+            <!--<span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>-->
+            <div class="weui-tabbar__icon">
+                <i class="fa fa-weixin fa-active" aria-hidden="true"></i>
+            </div>
+            <p class="weui-tabbar__label">微信</p>
+        </a>
+        <a href="#tab2" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <i class="fa fa-users" aria-hidden="true"></i>
+            </div>
+            <p class="weui-tabbar__label">通讯录</p>
+        </a>
+        <a href="#tab3" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <i class="fa fa-compass" aria-hidden="true"></i>
+            </div>
+            <p class="weui-tabbar__label">发现</p>
+        </a>
+        <a href="#tab4" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+            <p class="weui-tabbar__label">我</p>
+        </a>
+    </div>
+</div>
+
+<script src="src/js/lib/jquery-2.1.4.js"></script>
+<script src="src/js/lib/fastclick.js"></script>
+
+<script>
+    $(function () {
+        FastClick.attach(document.body);
+    });
+</script>
+<script src="src/js/lib/jquery-weui.min.js"></script>
+<script src="src/js/lib/scrollspy.js"></script>
+
+<script>
+
+
+    $("body").on("touchstart", function (e) {
+        e.preventDefault();
+        startX = e.originalEvent.changedTouches[0].pageX,
+            startY = e.originalEvent.changedTouches[0].pageY;
+    });
+
+
+    $('.friendsCircle').on('click', function (e) {
+        console.log(this);
+        location.href = "pages/friendsCircle.html";
+    })
+
+    function array_diff(a, b) {
+        for (var i = 0; i < b.length; i++) {
+            for (var j = 0; j < a.length; j++) {
+                if (a[j] == b[i]) {
+                    a.splice(j, 1);
+                    j = j - 1;
+                }
+            }
+        }
+        return a;
+    }
+
+    var scrollListsEnter = [];
+    var scrollListsExit = [];
+
+    //    var body = $('.index3');
+    //    for (var i = 0; i < 100; ++i) {
+    //        var element = $('<div id="tile-' + i + '" class="tile"><h2>Tile #' + i + '</h2></div>');
+    //        body.append(element);
+    //    }
+    $('.delete-swipeout').click(function () {
+        $(this).parents('.weui-cell').remove()
+    })
+    $('.close-swipeout').click(function () {
+        $(this).parents('.weui-cell').swipeout('close')
+    })
+
+
+    $('a').on('click', function (e) {
+        $(this).children('.weui-tabbar__icon').children('.fa').addClass('fa-active')
+        $(this).siblings().children('.weui-tabbar__icon').children('.fa').removeClass('fa-active')
+
+        if ($(this).text().indexOf("通讯录") > 0) {
+            $('.lists-item').on('scrollSpy:enter', function () {
+//                console.log('enter:', $(this).attr('id'));
+//
+
+                scrollListsEnter.push($(this).attr("id"));
+                if (scrollListsExit.length > 0) {
+
+                    console.log(scrollListsEnter);
+                    var divId = array_diff(scrollListsEnter, scrollListsExit)[0];
+                    console.log(divId);
+                    $('.' + divId).siblings().css('color', '#000')
+                    $('.' + divId).css('color', 'red')
+                }
+
+                $("body").on("touchmove", function (e) {
+                    e.preventDefault();
+                    moveEndX = e.originalEvent.changedTouches[0].pageX,
+                        moveEndY = e.originalEvent.changedTouches[0].pageY,
+                        X = moveEndX - startX,
+                        Y = moveEndY - startY;
+
+                    if (Math.abs(X) > Math.abs(Y) && X > 0) {
+//                        alert("left 2 right");
+                    }
+                    else if (Math.abs(X) > Math.abs(Y) && X < 0) {
+//                        alert("right 2 left");
+                    }
+                    else if (Math.abs(Y) > Math.abs(X) && Y > 0) {
+
+                    }
+                    else if (Math.abs(Y) > Math.abs(X) && Y < 0) {
+
+
+                    }
+                    else {
+//                        alert("just touch");
+                    }
+                });
+                var windowHeight = $(window).height(),
+                    $body = $("body");
+                // console.log($(window).height()); //627
+                // console.log($('body').height()); //0
+                $body.css("height", windowHeight); //重要代码
+
+            });
+
+            $('.lists-item').on('scrollSpy:exit', function () {
+//                console.log('exit:', $(this).attr('id'));
+
+
+                scrollListsExit.push($(this).attr("id"));
+                console.log('scrollListsExit==' + scrollListsExit);
+
+//                if(scrollListsExit.length>5){
+//                    scrollListsExit.length = 0;
+////                    console.log(array_diff(scrollListsEnter,scrollListsExit));
+//                }
+
+
+            });
+
+            $('.lists-item').scrollSpy();
+        }
+
+    })
+
+
+</script>
+</body>
+</html>
