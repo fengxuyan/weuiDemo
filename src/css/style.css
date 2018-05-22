@@ -81,13 +81,6 @@ ul, li {
     bottom: -.5rem;
     width: 3rem;
     height: 3rem; }
-    .circle-container .g-cicle-top .g-img-box .g-head-box img {
-      width: 100%;
-      height: 100%;
-      padding: 1px;
-      background: #fff;
-      border: 1px solid #ddd;
-      box-shadow: 2px 2px 3px #00000078; }
     .circle-container .g-cicle-top .g-img-box .g-head-box .g-txt-head {
       display: inline-block;
       position: absolute;
@@ -97,6 +90,13 @@ ul, li {
       font-size: .8rem;
       color: #fff;
       font-style: normal; }
+    .circle-container .g-cicle-top .g-img-box .g-head-box .g-pic-head {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      padding: 1px;
+      border: 1px solid #ddd;
+      box-shadow: 2px 2px 3px #00000078; }
 .circle-container .g-m-content {
   margin-top: 3rem; }
   .circle-container .g-m-content .g-list-box {
@@ -195,7 +195,14 @@ ul, li {
         overflow-x: hidden;
         color: #5B6A92;
         background-color: #F3F3F5; }
-      .circle-container .g-m-content .g-list-box .g-r-box .g-m-paragraph {
-        border: 1px solid green; }
+      .circle-container .g-m-content .g-list-box .g-r-box .g-m-paragraph .pic-lists .list-item {
+        display: inline-block;
+        flaot: left;
+        width: 31%;
+        height: 4rem;
+        overflow: hidden; }
+        .circle-container .g-m-content .g-list-box .g-r-box .g-m-paragraph .pic-lists .list-item img {
+          max-height: 4rem;
+          _width: expression(this.height > 4rem ? "4rem" : this.height); }
 
 /*# sourceMappingURL=style.css.map */

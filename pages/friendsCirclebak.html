@@ -14,10 +14,123 @@
     <link rel="stylesheet" href="../src/css/lib/font-awesome.min.css">
     <link rel="stylesheet" href="../src/css/demos.css">
     <link rel="stylesheet" href="../src/css/style.css">
+
+
+    <link rel="stylesheet prefetch" href="../src/css/lib/photoswipe.css">
+    <link rel="stylesheet prefetch" href="../src/css/lib/default-skin.css">
+    <link rel="stylesheet" href="../src/css/lib/swiper.min.css">
+    <style class="cp-pen-styles">
+        .my-gallery {
+            width: 100%;
+            float: left;
+        }
+
+        .my-gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        .my-gallery figure {
+            display: block;
+            float: left;
+            margin: 0 5px 5px 0;
+            width: 150px;
+        }
+
+        .my-gallery figcaption {
+            display: none;
+        }
+
+        /****/
+        .swiper-container {
+            width: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 1.0625rem;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-pagination {
+            height: 50px;
+            line-height: 50px;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5)
+        }
+    </style>
 </head>
 
 <body ontouchstart>
 
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+
+
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 <div class="circle-container">
 
     <div class="g-cicle-top">
@@ -38,16 +151,41 @@
                 <div class="g-t-nickname">西奥</div>
                 <div class="g-m-paragraph">
                     <p>遥看牵牛织女星遥看牵牛织女星遥看牵牛织女星遥看牵牛织女星遥看牵牛织女星遥看牵牛织女星遥看牵牛织女星遥看牵牛织女星遥看牵牛织女星遥看牵牛织女星遥看牵牛织女</p>
-                    <ul class="pic-lists">
-                        <li class="list-item" style="background-image: url('../src/images/xiwei01.jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;"></li>
-                        <li class="list-item" style="background-image: url('../src/images/xiwei01.jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;"></li>
-                        <li class="list-item" style="background-image: url('../src/images/chair.jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;"></li>
-                        <li class="list-item" style="background-image: url('../src/images/xiwei01.jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;"></li>
-                        <li class="list-item" style="background-image: url('../src/images/chair.jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;"></li>
-                        <li class="list-item" style="background-image: url('../src/images/chair.jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;"></li>
-                        <li class="list-item" style="background-image: url('../src/images/xiwei01.jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;"></li>
-                        <li class="list-item" style="background-image: url('../src/images/xiwei01.jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;"></li>
-                    </ul>
+                    <div class="swiper-container swiper-container-horizontal" alt="Image description">
+                        <div class="my-gallery swiper-wrapper " data-pswp-uid="1">
+                            <div class="swiper-slide swiper-slide-active" style="height: 4rem;overflow: hidden">
+                                <a href="./a.jpg" data-size="1024x1024" style="height: 4rem;"><img src="./a.jpg" style="height: 100%"></a>
+                                <figcaption itemprop="caption description">图片描述 1</figcaption>
+                            </div>
+                            <div class="swiper-slide swiper-slide-next" style="height: 4rem;overflow: hidden">
+                                <a href="../src/images/xiwei01.jpg" style="height: 4rem;" data-size="964x1024"><img src="../src/images/xiwei01.jpg" style="height: 100%"></a>
+                                <figcaption itemprop="caption description">图片描述 2</figcaption>
+                            </div>
+                            <div class="swiper-slide swiper-slide-next" style="height: 4rem;overflow: hidden">
+                                <a href="../src/images/chair.jpg" style="height: 4rem;" data-size="964x1024"><img src="../src/images/chair.jpg" style="height: 100%"></a>
+                                <figcaption itemprop="caption description">图片描述 2</figcaption>
+                            </div>
+                            <div class="swiper-slide swiper-slide-next" style="height: 4rem;overflow: hidden">
+                                <a href="../src/images/xiwei01.jpg" style="height: 4rem;" data-size="964x1024"><img src="../src/images/xiwei01.jpg" style="height: 100%"></a>
+                                <figcaption itemprop="caption description">图片描述 2</figcaption>
+                            </div>
+                            <div class="swiper-slide swiper-slide-next" style="height: 4rem;overflow: hidden">
+                                <a href="../src/images/chair.jpg" style="height: 4rem;" data-size="964x1024"><img src="../src/images/chair.jpg" style="height: 100%"></a>
+                                <figcaption itemprop="caption description">图片描述 2</figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------滑动焦点图 end------------------->
+                    <!--<ul class="pic-lists">-->
+                        <!--<li class="list-item" style="background-image: url('../src/images/xiwei01.jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;"></li>-->
+                        <!--<li class="list-item" style="background-image: url('../src/images/xiwei01.jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;"></li>-->
+                        <!--<li class="list-item" style="background-image: url('../src/images/chair.jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;"></li>-->
+                        <!--<li class="list-item" style="background-image: url('../src/images/xiwei01.jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;"></li>-->
+                        <!--<li class="list-item" style="background-image: url('../src/images/chair.jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;"></li>-->
+                        <!--<li class="list-item" style="background-image: url('../src/images/chair.jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;"></li>-->
+                        <!--<li class="list-item" style="background-image: url('../src/images/xiwei01.jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;"></li>-->
+                        <!--<li class="list-item" style="background-image: url('../src/images/xiwei01.jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;"></li>-->
+                    <!--</ul>-->
                 </div>
                 <div class="g-b-time">
                     <span>4分钟前</span><span class="icon-comment"></span>
@@ -156,8 +294,24 @@
 
 <script src="../src/js/lib/jquery-2.1.4.js"></script>
 <script src="../src/js/lib/fastclick.js"></script>
-
+<!-- 滑动焦点图 -->
+<script src="../src/js/lib/swiper.min.js"></script>
 <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationType: 'fraction'
+    });
+
+
+</script>
+<!-- 滑动焦点图end-->
+
+<script src="../src/js/lib/big_img.js"></script>
+<script src="../src/js/lib/photoswipe.min.js"></script>
+<script src="../src/js/lib/photoswipe-ui-default.min.js"></script>
+<script src="../src/js/lib/bigImg.js"></script>
+<script>
+    $('.swiper-slide').css({'width':'30%','display':'inline-block','float':'left'})
 
     $(function () {
         FastClick.attach(document.body);
